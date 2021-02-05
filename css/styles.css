@@ -5,8 +5,9 @@ body {
 
 .container {
   position: relative;
-  height: 200px;
+  height: 300px;
   overflow: hidden;
+  background-position: 50% 20%;
 }
 
 .text-block {
@@ -67,6 +68,7 @@ body {
 .image {
   width: 50%;
   height: 200px;
+  object-fit: cover;
   display: inline-block;
   background-size: contain;
   background-repeat: no-repeat;
