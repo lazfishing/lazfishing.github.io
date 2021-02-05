@@ -13,9 +13,68 @@
 </head>
 
 <body>
-  <h1>This is a header</h1>
-  <div>Hello, World</div>
-  <p>This is a new line</p>
+  <div class="container">
+  <img src="https://london.ac.uk/sites/default/files/styles/promo_large/public/2018-10/london-aerial-cityscape-river-thames_1.jpg?itok=BMaDUhjp" style="width:100%;">
+  <div class='text-block'>
+    <h3>Great Restaurants in London</h3>
+    <p>
+    Select the borough you are visiting!
+    </p>
+    <button class="islington-button" onclick="islington()">Islington</button>
+    <button class="holborn-button" onclick='holborn()'>Holborn</button>
+    <button class="king-button" onclick='king()'>King's Cross</button>
+  </div>
+  </div>
+
+  <div id='islington'>
+    <button class="collapsible">Dragonfly Cafe</button>
+    <div class="content">
+      <div class="description">
+        <p>Dragonfly Cafe is a family run restaurant providing authentic Vietnamese Cuisine.</p>
+      </div>
+      <img src="https://rs-menus-api.roocdn.com/images/080e66e2-a1ad-4a37-bc66-10edd4aa2920/image.jpeg?width=1200&height=630&auto=webp&format=jpg&fit=crop&v" class='image'>
+    </div>
+
+      <button class="collapsible">Goswell Road Coffee</button>
+    <div class="content">
+      <div class="description">
+        <p>This is the kind of local cafe that makes you want to while away a Sunday afternoon listening to DJ tunes while tapping out your latest novel on your laptop.</p>
+      </div>
+      <img src="https://i.pinimg.com/originals/49/b6/a3/49b6a35260491309167061d3e252f7e1.jpg" class='image'>
+    </div>
+  </div>
+
+
+  <div id='holborn'>
+
+    <button class="collapsible">Balthazar</button>
+    <div class="content">
+      <div class="description">
+        <p>Balthazar London offers something for everyone, all day long. We serve lunch and dinner, as well as weekend brunch.</p>
+      </div>
+      <img src="https://media.timeout.com/images/100685277/image.jpg" class='image'>
+    </div>
+
+  </div>
+
+  <div id='king'>
+
+    <button class="collapsible">Dishoom King's Cross</button>
+    <div class="content">
+      <div class="description">
+        <p>Buzzy destination for Indian street food in Bombay-style digs with vintage decor and upscale touches.</p>
+      </div>
+      <img src="https://images.prismic.io/dishoom/8ff2cea4fdb751bae5f8f72c8cbd6f9f63c9761b_dishoom-kings-cross.jpg?auto=compress,format" class='image'>
+    </div>
+
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
   <script src='js/scripts.js'></script>
+
 </body>
+
 </html>
