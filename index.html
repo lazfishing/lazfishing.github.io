@@ -3,13 +3,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
+  <title>Johnson's Menu</title>
+  <meta name="description" content="Johnson's Menu">
   <meta name="author" content="SitePoint">
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 
-<body>
+<body style='margin-left:20px;margin-right:20px;'>
   <div class="container" style='background-image: url("https://london.ac.uk/sites/default/files/styles/promo_large/public/2018-10/london-aerial-cityscape-river-thames_1.jpg");'>
   <div class='text-block'>
     <h3>Great Restaurants in London</h3>
@@ -22,47 +22,75 @@
   </div>
   </div>
 
-  <div id='islington'>
-    <button class="collapsible">Dragonfly Cafe</button>
-    <div class="content">
-      <div class="description">
-        <p>Dragonfly Cafe is a family run restaurant providing authentic Vietnamese Cuisine.</p>
+  <div class='boroughListing' id='islington'>
+
+    <div>
+      <button class="collapsible">Dragonfly Cafe</button>
+      <div class="content">
+        <div class="description">
+          <p>Dragonfly Cafe is a family run restaurant providing authentic Vietnamese Cuisine.</p>
+        </div>
+        <img src="https://rs-menus-api.roocdn.com/images/080e66e2-a1ad-4a37-bc66-10edd4aa2920/image.jpeg?width=1200&height=630&auto=webp&format=jpg&fit=crop&v" class='image'>
       </div>
-      <img src="https://rs-menus-api.roocdn.com/images/080e66e2-a1ad-4a37-bc66-10edd4aa2920/image.jpeg?width=1200&height=630&auto=webp&format=jpg&fit=crop&v" class='image'>
     </div>
 
+    <div>
       <button class="collapsible">Goswell Road Coffee</button>
-    <div class="content">
-      <div class="description">
-        <p>This is the kind of local cafe that makes you want to while away a Sunday afternoon listening to DJ tunes while tapping out your latest novel on your laptop.</p>
+      <div class="content">
+        <div class="description">
+          <p>This is the kind of local cafe that makes you want to while away a Sunday afternoon listening to DJ tunes while tapping out your latest novel on your laptop.</p>
+        </div>
+        <img src="https://i.pinimg.com/originals/49/b6/a3/49b6a35260491309167061d3e252f7e1.jpg" class='image'>
       </div>
-      <img src="https://i.pinimg.com/originals/49/b6/a3/49b6a35260491309167061d3e252f7e1.jpg" class='image'>
-    </div>
-  </div>
-
-
-  <div id='holborn'>
-
-    <button class="collapsible">Balthazar</button>
-    <div class="content">
-      <div class="description">
-        <p>Balthazar London offers something for everyone, all day long. We serve lunch and dinner, as well as weekend brunch.</p>
-      </div>
-      <img src="https://media.timeout.com/images/100685277/image.jpg" class='image'>
     </div>
 
   </div>
 
-  <div id='king'>
 
-    <button class="collapsible">Dishoom King's Cross</button>
-    <div class="content">
-      <div class="description">
-        <p>Buzzy destination for Indian street food in Bombay-style digs with vintage decor and upscale touches.</p>
+  <div class='boroughListing' id='holborn'>
+
+    <div>
+      <button class="collapsible">Balthazar</button>
+      <div class="content">
+        <div class="description">
+          <p>Balthazar London offers something for everyone, all day long. We serve lunch and dinner, as well as weekend brunch.</p>
+        </div>
+        <img src="https://media.timeout.com/images/100685277/image.jpg" class='image'>
       </div>
-      <img src="https://images.prismic.io/dishoom/8ff2cea4fdb751bae5f8f72c8cbd6f9f63c9761b_dishoom-kings-cross.jpg?auto=compress,format" class='image'>
     </div>
 
+  </div>
+
+  <div class='boroughListing' id='king'>
+
+    <div>
+      <button class="collapsible">Dishoom King's Cross</button>
+      <div class="content">
+        <div class="description">
+          <p>Buzzy destination for Indian street food in Bombay-style digs with vintage decor and upscale touches.</p>
+        </div>
+        <img src="https://images.prismic.io/dishoom/8ff2cea4fdb751bae5f8f72c8cbd6f9f63c9761b_dishoom-kings-cross.jpg?auto=compress,format" class='image'>
+      </div>
+    </div>
+
+  </div>
+
+  <div id='inputListing'>
+    <h3>Add a new listing!</h3>
+      <label for='borough'>Borough</label>
+      <select name="borough" id="borough">
+        <option value="#islington">Islington</option>
+        <option value="#king">King's Cross</option>
+        <option value="#holborn">Holborn</option>
+      </select>
+      <br><br>
+      <label for='placeName'>Name of restaurant</label>
+      <input type='text' id='placeName'><br><br>
+      <label for='placeDescription'>Description of restaurant</label>
+      <input type='text' id='placeDescription'><br><br>
+      <label for='placeImage'>URL of restaurant image</label>
+      <input type='url' id='placeImage'><br><br>
+      <input type="submit" value="Submit" id='addListing'>
   </div>
 
   <script
